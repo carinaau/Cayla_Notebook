@@ -361,4 +361,7 @@ You can view the sql codes for the demographic results  [View](https://github.co
 
 
 ## 10. Final Dashboard (Tableau)
-![[Customer Churn Analysis.png]]
+
+![](./CustomerChurnAnalysis.png)
+
+
