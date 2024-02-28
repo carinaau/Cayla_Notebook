@@ -41,7 +41,7 @@ HAVING COUNT(Customer_ID) > 1;
 ## Exploratory Analysis
 
 There are 7043 customers in total.
-![[Screenshot 2024-02-27 at 18.19.02.png]] 
+![](./Screenshot%202024-02-27%20at%2018.19.02.png)
 ``` sql
 -- Find total number of customers
 SELECT COUNT(Customer_ID) AS Total_Customer
@@ -62,7 +62,7 @@ FROM telecom_customer_churn
 GROUP BY Customer_Status;
 ```
 
-![[Screenshot 2024-02-27 at 18.32.16.png]]
+![](./Screenshot%202024-02-27%20at%2018.32.16.png)
 
 
 **2. What’s the typical tenure for churned customers?**
@@ -91,7 +91,7 @@ GROUP BY
 ORDER BY Churn_Percentage DESC;
 ```
 
-![[Screenshot 2024-02-27 at 18.43.48.png]]
+![](./Screenshot%202024-02-27%20at%2018.43.48.png)
 
 
 **3. Which cities had the highest churn rates?**
@@ -111,7 +111,7 @@ AND COUNT(CASE WHEN Customer_Status = 'Churned' THEN Customer_ID ELSE NULL END) 
 ORDER BY Churn_Rate DESC
 LIMIT 4;
 ```
-![[Screenshot 2024-02-27 at 18.49.00.png]] 
+![](./Screenshot%202024-02-27%20at%2018.49.00.png)
 
 **4. What are the general reasons for churn?**
 
@@ -133,7 +133,7 @@ ORDER BY
 	Churn_Percentage DESC;
 ```
 
-![[Screenshot 2024-02-27 at 18.52.28.png]]
+![](./Screenshot%202024-02-27%20at%2018.52.28.png)
 
 **5a. Specific reasons for churn**
 
@@ -156,7 +156,7 @@ ORDER BY churn_percentage DESC
 LIMIT 5;
 ```
 
-![[Screenshot 2024-02-27 at 18.56.30.png]] 
+![](./Screenshot%202024-02-27%20at%2018.56.30.png)
 
 
 **5b. What offers did churned customers have?**
@@ -178,7 +178,7 @@ ORDER BY
 	churned DESC;
 ```
 
-![[Screenshot 2024-02-27 at 18.58.58.png]]
+![](./Screenshot%202024-02-27%20at%2018.58.58.png)
 
 **5c. What internet type did churners have?**
 
@@ -215,8 +215,8 @@ GROUP BY
 ORDER BY Churn_Percentage DESC;
 ```
 
-![[Screenshot 2024-02-27 at 19.02.11.png]]
-![[Screenshot 2024-02-27 at 19.03.04.png]]
+![](./Screenshot%202024-02-27%20at%2019.02.11.png)
+![](./Screenshot%202024-02-27%20at%2019.03.04.png)
 
 **5d. Did churners have premium tech support?**
 
@@ -236,7 +236,7 @@ GROUP BY Premium_Tech_Support
 ORDER BY Churned DESC;
 ```
 
-![[Screenshot 2024-02-27 at 19.07.26.png]]
+![](./Screenshot%202024-02-27%20at%2019.07.26.png)
 
 **5e. What contract were churners on?**
 
@@ -259,7 +259,7 @@ ORDER BY
 	Churned DESC;
 ```
 
-![[Screenshot 2024-02-27 at 20.19.13.png]]
+![](./Screenshot%202024-02-27%20at%2020.19.13.png)
 
 
 The **key churn indicators** are therefore:
@@ -285,7 +285,7 @@ These high-value customers were then categorized into three risk groups based on
 - **Low Risk (1 indicator):** These customers are less likely to churn but should still be monitored.
 
 
-![[Screenshot 2024-02-27 at 21.47.05.png]]
+![](./Screenshot%202024-02-27%20at%2021.47.05.png)
 
 Over half of (63%) high-value customers are at a medium-to-high risk of churning. 
 
